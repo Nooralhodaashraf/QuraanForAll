@@ -1,0 +1,25 @@
+@media (max-width: 1023px) {
+  .cards-slider {
+    display: flex !important;
+    overflow: hidden;
+    gap: 24px;
+    justify-content: flex-start !important;
+    width: 100%;
+  }
+
+  .blog-card {
+    flex: 0 0 85%;
+    max-width: 342px;
+    animation: slideCards 12s linear infinite;
+  }
+}
+
+@keyframes slideCards {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-120%);
+  }
+}

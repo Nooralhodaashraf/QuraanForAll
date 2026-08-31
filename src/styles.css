@@ -1,0 +1,20 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import 'tailwindcss';
+
+@import 'ngx-toastr/toastr';
+
+@utility container{
+  margin-inline:auto
+}
+
+
+
+@theme {
+  --color-primary: #034632;
+  --color-secondary: #51BB55;
+  --color-marks: #8C7237;
+  --color-mint: #D7ECE6;
+}
+
+body{  font-family: "Poppins", sans-serif;}
