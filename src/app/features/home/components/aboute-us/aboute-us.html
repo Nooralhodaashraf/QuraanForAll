@@ -1,11 +1,12 @@
 <section
-  class="relative z-10 max-w-7xl mx-auto px-4 lg:px-12 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center"
+  class="relative z-10 max-w-7xl mx-auto px-4 lg:px-12 py-12 lg:py-20 grid grid-cols-1 lg:grid-cols-2 gap-10 items-center overflow-hidden"
 >
   <div class="col-span-1 text-center lg:text-left p-4">
     <h2 class="font-semibold text-[36px]">About Us</h2>
 
     <div class="w-full flex justify-center items-center lg:block">
       <svg
+        class="max-w-full h-auto"
         width="200"
         height="20"
         viewBox="0 0 200 20"
@@ -38,13 +39,14 @@
         Join us to start your journey toward understanding the Quran with clarity and love.
       </li>
     </ul>
-    <p class="lg:hidden text-[14px] leading-5.25font-[400] w-73.75 mx-auto">
+    <p class="lg:hidden text-[14px] leading-relaxed font-normal w-full max-w-[295px] mx-auto">
       We spread Quran and Islamic knowledge worldwide through interactive online lessons in Quran,
       Tajweed, and Islamic studies with certified teachers. Start your journey with clarity and
       love.
     </p>
     <div class="lg:hidden mt-12 w-full">
       <button
+        routerLink="/AboutUs"
         class="bg-secondary w-50 text-[14px] hover:bg-green-600 text-white px-8 py-3 rounded-[30px_5px_30px_5px] shadow-lg transition"
       >
         Read more

@@ -1,16 +1,16 @@
 <section
-  class="py-24 text-center justify-center items-center px-10 grid mx-auto h-[560px] lg:h-[845.6337890625px]"
+  class="py-24 text-center justify-center items-center px-4 sm:px-6 lg:px-10 grid mx-auto h-[560px] lg:h-[845.6337890625px] overflow-hidden"
 >
-  <!--! h-[417px] الطول اللي ف الديزاين بيبوظ كل شيء  -->
-  <div class="justify-center grid w-[320px] lg:w-[1276px] mx-auto">
+  <div class="justify-center grid w-full max-w-full lg:max-w-[1276px] mx-auto">
     <!-- Title -->
     <div
-      class="text-center grid justify-center items-center px-7 w-full lg:w-[1189px] mx-auto mb-16 leading-[21px]"
+      class="text-center grid justify-center items-center px-2 sm:px-7 w-full lg:w-[1189px] mx-auto mb-16 leading-[21px]"
     >
       <h2 class="text-[18px] font-semibold text-black">Our Teaching Philosophy</h2>
 
       <div class="flex items-center justify-center mt-4">
         <svg
+          class="max-w-full h-auto"
           width="200"
           height="20"
           viewBox="0 0 200 20"
@@ -30,30 +30,28 @@
       </div>
 
       <p
-        class="mt-6 mx-auto text-black px-20 w-[50%] md:w-full text-center font-normal leading-7 text-[14px] md:text-[20px]"
+        class="mt-6 mx-auto text-black px-4 md:px-0 w-full max-w-2xl text-center font-normal leading-7 text-[14px] md:text-[20px]"
       >
         How we guide our students to learn the Quran with excellence and love.
       </p>
       <div
-        class="w-[80%] mx-auto overflow-visible lg:hidden lg:grid-cols-2 xl:grid-cols-3 lg:gap-15 h-70.75"
+        class="w-full max-w-md mx-auto overflow-hidden lg:hidden h-70.75"
       >
-        <!--! w-[271px] غيرته لانه بيبوظ المقاسات عن اللي موجود ف الديزاين -->
         <swiper-container
-          class="mySwiper w-full overflow-visible"
+          class="mySwiper w-full"
           slides-per-view="auto"
           autoplay="true"
         >
           @for (card of philosophyCards; track card.title) {
-            <swiper-slide class="px-2 py-3.5 w-full overflow-visible">
+            <swiper-slide class="px-2 py-3.5 w-auto flex justify-center">
               <div
-                class="py-1.25 px-px h-[283px] w-[50%] mx-auto overflow-visible rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl bg-linear-to-b from-yellow-600 via-emerald-700 to-emerald-900 hover:scale-105 transition duration-300"
+                class="py-1.25 px-px h-[283px] w-[260px] sm:w-[280px] mx-auto rounded-tl-[50px] rounded-br-[50px] rounded-tr-xl rounded-bl-xl bg-linear-to-b from-yellow-600 via-emerald-700 to-emerald-900 hover:scale-105 transition duration-300"
               >
                 <div
                   class="bg-white h-full w-full rounded-tl-[48px] pt-7 px-0 rounded-br-[48px] rounded-tr-lg rounded-bl-lg text-center flex flex-col items-center"
                 >
                   <!-- Title -->
                   <div class="pt-7 px-2">
-                    <!-- !pt-[78px] دا رقم مبوظ الشكل كله ومطلع الكلام برا الدفاية -->
                     <h3 class="font-medium text-[20px] text-black mb-4 leading-7.5">
                       {{ card.title }}
                     </h3>
@@ -73,9 +71,9 @@
 
     <!-- Cards -->
 
-    <div class="w-full px-30 flex justify-center items-center mx-auto">
+    <div class="w-full px-4 lg:px-30 flex justify-center items-center mx-auto">
       <div
-        class="w-full mx-auto overflow-visible px-4 lg:px-10 hidden lg:grid lg:grid-cols-3 justify-center lg:gap-15"
+        class="w-full mx-auto px-4 lg:px-10 hidden lg:grid lg:grid-cols-3 justify-center lg:gap-15"
       >
         @for (card of philosophyCards; track card.title) {
           <div
