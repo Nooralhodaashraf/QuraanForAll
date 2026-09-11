@@ -1,0 +1,180 @@
+.pricing-section {
+  font-family: 'Poppins', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* Card Shape & Deep Soft Shadow */
+.pricing-card {
+  border-top-left-radius: 46px;
+  border-top-right-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 46px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.28), 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pricing-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* Duration Pills at Top */
+.duration-pill {
+  border-radius: 24px;
+  min-width: 104px;
+  height: 56px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.22);
+  transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+.duration-pill:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.28);
+}
+
+.duration-pill:active {
+  transform: scale(0.96);
+}
+
+/* Start Free Trial Button */
+.btn-trial {
+  background-color: #48C354;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.btn-trial:hover {
+  background-color: #3eb549;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.18);
+}
+
+.btn-trial:active {
+  transform: scale(0.97);
+}
+
+/* Strikethrough Price Styling */
+.strike-price {
+  position: relative;
+  display: inline-block;
+  color: #94A3B8;
+  font-weight: 400;
+}
+
+.strike-price::after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  right: -2px;
+  top: 50%;
+  height: 1.5px;
+  background-color: #94A3B8;
+  transform: translateY(-50%);
+}
+
+/* Most Popular Badge */
+.badge-popular {
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* ================= Mobile Slider Mode (< 1024px) ================= */
+@media (max-width: 1023px) {
+  .pricing-cards-container {
+    width: 100%;
+    overflow: hidden;
+    padding-top: 18px;
+    padding-bottom: 22px;
+    margin-top: -18px;
+    margin-bottom: -22px;
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 4%,
+      black 96%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      to right,
+      transparent 0%,
+      black 4%,
+      black 96%,
+      transparent 100%
+    );
+  }
+
+  .pricing-cards-track {
+    display: flex;
+    width: max-content;
+    animation: slidePricingCards 25s linear infinite;
+    will-change: transform;
+  }
+
+  /* Stop moving on hover or active touch */
+  .pricing-cards-container:hover .pricing-cards-track,
+  .pricing-cards-track:hover,
+  .pricing-cards-track:active {
+    animation-play-state: paused;
+  }
+
+  .pricing-cards-group {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
+  }
+
+  .pricing-card {
+    flex: 0 0 250px;
+    width: 250px;
+  }
+}
+
+@keyframes slidePricingCards {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* ================= Desktop Grid Mode (>= 1024px) ================= */
+@media (min-width: 1024px) {
+  .pricing-cards-container {
+    width: 100%;
+    overflow: visible;
+  }
+
+  .pricing-cards-track {
+    display: block;
+    animation: none;
+  }
+
+  .pricing-cards-group {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 0.75rem;
+    align-items: stretch;
+    padding-right: 0;
+  }
+
+  @media (min-width: 1280px) {
+    .pricing-cards-group {
+      gap: 1rem;
+    }
+  }
+
+  .pricing-cards-group-clone {
+    display: none !important;
+  }
+
+  .pricing-card {
+    width: auto;
+    flex: initial;
+  }
+}
