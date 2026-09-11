@@ -2,12 +2,13 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: 2.4rem;
-  height: 2.4rem;
-  min-width: 2.4rem;
-  min-height: 2.4rem;
+  width: 2.45rem;
+  height: 2.45rem;
+  min-width: 2.45rem;
+  min-height: 2.45rem;
   border-radius: 9999px;
   background-color: #ffffff;
+  color: #000000;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.18);
   transition: all 0.28s cubic-bezier(0.34, 1.56, 0.64, 1);
   cursor: pointer;
@@ -16,17 +17,55 @@
   text-decoration: none;
 }
 
+.social-circle-btn i {
+  color: #000000 !important;
+  font-size: 1.15rem;
+  line-height: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.28s ease;
+}
+
+.social-circle-btn i.fa-facebook-f {
+  font-size: 1.1rem;
+}
+
+.social-circle-btn i.fa-whatsapp {
+  font-size: 1.2rem;
+}
+
+.social-circle-btn i.fa-instagram {
+  font-size: 1.15rem;
+}
+
+.social-circle-btn i.fa-paper-plane {
+  font-size: 1.05rem;
+  margin-left: -2px;
+}
+
+.social-circle-btn i.fa-youtube {
+  font-size: 1.15rem;
+}
+
+.social-circle-btn i.fa-square-x-twitter {
+  font-size: 1.25rem;
+}
+
+.social-circle-btn i.fa-snapchat {
+  font-size: 1.15rem;
+}
+
+.social-circle-btn i.fa-tiktok {
+  font-size: 1.1rem;
+}
+
 .social-circle-btn:hover {
   transform: translateY(-4px) scale(1.12);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
   background-color: #ffffff;
 }
 
-.social-circle-btn svg {
-  transition: transform 0.28s ease;
-  display: block;
-}
-
-.social-circle-btn:hover svg {
-  transform: scale(1.08);
+.social-circle-btn:hover i {
+  transform: scale(1.1);
 }
