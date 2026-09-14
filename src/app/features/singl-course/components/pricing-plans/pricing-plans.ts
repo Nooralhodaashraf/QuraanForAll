@@ -111,5 +111,5 @@ export class PricingPlans {
   selectDuration(duration: string): void {
     this.selectedDuration = duration;
   }
+  patternItems = Array.from({ length: 100 });
 }
-

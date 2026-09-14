@@ -13,12 +13,4 @@ import { Intro } from './component/intro/intro';
   templateUrl: './about-us.html',
   styleUrl: './about-us.css',
 })
-export class AboutUs implements OnInit {
-  MyArray: number[] = [1, 2, 3, 4, 5];
-
-  Array2: number[] = this.MyArray.filter((num) => num % 2 == 0);
-  ngOnInit(): void {
-    console.log(this.MyArray);
-    console.log(this.Array2);
-  }
-}
+export class AboutUs {}
