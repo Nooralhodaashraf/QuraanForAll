@@ -37,7 +37,7 @@
       class="absolute inset-0 pointer-events-none opacity-30 bg-[url('/imgs/precentage.png')] bg-repeat-y bg-cover bg-center [mask-image:radial-gradient(ellipse_at_center,black_35%,transparent_85%)] [-webkit-mask-image:radial-gradient(ellipse_at_center,black_35%,transparent_85%)]"
     ></div>
     <div class="z-10">
-      <div class="container relative z-10 mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="container relative z-10 mx-auto px-4 sm:px-3 lg:px-5">
         <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <!-- ================= Subtitle Header ================= -->
           <div class="text-center text-white mb-7 sm:mb-9">
@@ -201,75 +201,81 @@
             </div>
           </div>
         </div>
-        <section class="relative isolate overflow-hidden px-5 py-14 sm:px-8 lg:px-14 xl:px-20">
-          <!-- ========================================================= -->
-          <!-- Main Content                                               -->
-          <!-- ========================================================= -->
-
-          <div class="mx-auto">
-            <!-- ================= SIBLING DISCOUNT ================= -->
-
-            <div class="grid items-center gap-10 md:grid-cols-2 md:gap-10">
+        <section class="relative isolate overflow-hidden px-5 py-14 lg:px-8 xl:px-10">
+          <div class="mx-auto max-w-7xl">
+            <div class="grid items-center gap-12 md:grid-cols-2 md:gap-10">
               <!-- Text + Cards -->
-              <div class="order-2 text-center md:order-1 md:text-left sm:px-20 md:px-5">
+              <div class="order-2 mx-auto w-full max-w-lg text-center md:order-1 md:text-left">
                 <h2 class="text-2xl font-bold tracking-wide text-white sm:text-3xl">
                   Sibling Discounts
                 </h2>
 
-                <p class="mx-auto mt-3 max-w-sm text-xs leading-6 text-white/80 sm:text-sm lg:mx-0">
+                <p class="mx-auto mt-3 max-w-sm text-xs leading-6 text-white/80 sm:text-sm md:mx-0">
                   We offer special discounts for families
                   <br class="hidden sm:block" />
                   enrolling more than one child:
                 </p>
 
                 <!-- Discount Cards -->
-                <div class="mt-6 flex justify-center gap-4 sm:gap-6 lg:justify-start">
+                <div class="mt-6 flex justify-center gap-8 md:justify-start">
                   <!-- 10% -->
-                  <div class="w-[115px] sm:w-[130px]">
-                    <div class="relative overflow-hidden rounded-xl bg-white text-center shadow-lg">
-                      <!-- top white section -->
-                      <div class="px-3 py-2">
-                        <span class="block text-xl font-bold text-black sm:text-2xl"> 10% </span>
+                  <div class="w-[178px]">
+                    <div
+                      class="relative h-[128px] bg-white text-center rounded-tl-[48px] rounded-br-[48px] shadow-[10px_10px_8px_rgba(0,0,0,0.22)]"
+                    >
+                      <!-- Percentage -->
+                      <div class="flex h-[68px] items-center justify-center">
+                        <span class="text-[36px] font-bold leading-none text-black"> 10% </span>
                       </div>
 
-                      <!-- bottom section -->
+                      <!-- Colored Strip -->
                       <div
-                        class="bg-[#d9ffff] px-2 py-2 text-[10px] font-semibold text-black sm:text-xs"
+                        class="relative z-10 flex h-[36px] w-[calc(100%+8px)] items-center justify-center bg-[#FFD38E] text-[17px] font-semibold leading-none text-black shadow-[7px_7px_5px_rgba(0,0,0,0.18)]"
                       >
                         For 2 siblings
                       </div>
+
+                      <!-- White space under strip -->
+                      <div class="h-[24px]"></div>
                     </div>
                   </div>
 
                   <!-- 15% -->
-                  <div class="w-[115px] sm:w-[130px]">
-                    <div class="relative overflow-hidden rounded-xl bg-white text-center shadow-lg">
-                      <div class="px-3 py-2">
-                        <span class="block text-xl font-bold text-black sm:text-2xl"> 15% </span>
+                  <div class="w-[178px]">
+                    <div
+                      class="relative h-[128px] bg-white text-center rounded-tl-[48px] rounded-br-[48px] shadow-[10px_10px_8px_rgba(0,0,0,0.22)]"
+                    >
+                      <!-- Percentage -->
+                      <div class="flex h-[68px] items-center justify-center">
+                        <span class="text-[36px] font-bold leading-none text-black"> 15% </span>
                       </div>
 
+                      <!-- Colored Strip -->
                       <div
-                        class="bg-[#d9ffff] px-2 py-2 text-[10px] font-semibold text-black sm:text-xs"
+                        class="relative z-10 flex h-[36px] w-[calc(100%+8px)] items-center justify-center bg-[#A8EEF3] text-[17px] font-semibold leading-none text-black shadow-[7px_7px_5px_rgba(0,0,0,0.18)]"
                       >
-                        For 3 or more
+                        for 3 or more
                       </div>
+
+                      <!-- White space under strip -->
+                      <div class="h-[24px]"></div>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <!-- ================= CHILDREN IMAGE ================= -->
-
-              <div class="order-1 flex justify-center lg:justify-start">
-                <div class="relative">
+              <!-- Children Image -->
+              <div class="order-1 flex w-full items-center justify-center md:order-2">
+                <div class="w-full max-w-[616px]">
                   <svg
-                    width="100%"
-                    height="100%"
+                    class="block h-auto w-full"
                     viewBox="0 0 616 472"
                     fill="none"
                     xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink"
                   >
+                    <!-- ================= CHILDREN IMAGE ================= -->
+
                     <path
                       fill-rule="evenodd"
                       clip-rule="evenodd"
@@ -345,10 +351,10 @@
 
             <!-- ================= ADVANCE PAYMENT ================= -->
 
-            <div class="mt-20 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+            <div class="mt-20 grid items-center h-[50%] gap-10 lg:grid-cols-2 lg:gap-16">
               <!-- ================= CARDS IMAGE ================= -->
 
-              <div class="flex justify-center lg:justify-center">
+              <div class="flex justify-center h-full lg:justify-center">
                 <div class="relative overflow-hidden">
                   <svg
                     width="100%"
@@ -395,34 +401,48 @@
                 </p>
 
                 <!-- Discount Cards -->
-                <div class="mt-6 flex justify-center gap-4 sm:gap-6 lg:justify-start">
-                  <!-- 5% -->
-                  <div class="w-[115px] sm:w-[130px]">
-                    <div class="overflow-hidden rounded-xl bg-white text-center shadow-lg">
-                      <div class="px-3 py-2">
-                        <span class="block text-xl font-bold text-black sm:text-2xl"> 5% </span>
+                <div class="mt-6 flex justify-center gap-8 md:justify-start">
+                  <!-- 10% -->
+                  <div class="w-[178px]">
+                    <div
+                      class="relative h-[128px] bg-white text-center rounded-tl-[48px] rounded-br-[48px] shadow-[10px_10px_8px_rgba(0,0,0,0.22)]"
+                    >
+                      <!-- Percentage -->
+                      <div class="flex h-[68px] items-center justify-center">
+                        <span class="text-[36px] font-bold leading-none text-black"> 10% </span>
                       </div>
 
+                      <!-- Colored Strip -->
                       <div
-                        class="bg-[#d9ffff] px-2 py-2 text-[10px] font-semibold text-black sm:text-xs"
+                        class="relative z-10 -ml-[8px] flex h-[36px] w-[calc(100%+16px)] items-center justify-center bg-[#FFD38E] text-[17px] font-semibold leading-none text-black shadow-[7px_7px_5px_rgba(0,0,0,0.18)]"
                       >
-                        For 3 months prepaid
+                        For 2 siblings
                       </div>
+
+                      <!-- White space under strip -->
+                      <div class="h-[24px]"></div>
                     </div>
                   </div>
 
-                  <!-- 10% -->
-                  <div class="w-[115px] sm:w-[130px]">
-                    <div class="overflow-hidden rounded-xl bg-white text-center shadow-lg">
-                      <div class="px-3 py-2">
-                        <span class="block text-xl font-bold text-black sm:text-2xl"> 10% </span>
+                  <!-- 15% -->
+                  <div class="w-[178px]">
+                    <div
+                      class="relative h-[128px] bg-white text-center rounded-tl-[48px] rounded-br-[48px] shadow-[10px_10px_8px_rgba(0,0,0,0.22)]"
+                    >
+                      <!-- Percentage -->
+                      <div class="flex h-[68px] items-center justify-center">
+                        <span class="text-[36px] font-bold leading-none text-black"> 15% </span>
                       </div>
 
+                      <!-- Colored Strip -->
                       <div
-                        class="bg-[#d9ffff] px-2 py-2 text-[10px] font-semibold text-black sm:text-xs"
+                        class="relative z-10 -ml-[8px] flex h-[36px] w-[calc(100%+16px)] items-center justify-center bg-[#A8EEF3] text-[17px] font-semibold leading-none text-black shadow-[7px_7px_5px_rgba(0,0,0,0.18)]"
                       >
-                        For 6 months prepaid
+                        for 3 or more
                       </div>
+
+                      <!-- White space under strip -->
+                      <div class="h-[24px]"></div>
                     </div>
                   </div>
                 </div>
