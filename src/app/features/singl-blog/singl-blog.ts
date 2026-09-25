@@ -1,6 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterLink } from '@angular/router';
+import { BlogContant } from './component/blog-contant/blog-contant';
+import { ContactHeader } from '../contact-us/contact-header/contact-header';
+import { BlogsHero } from '../blogs/components/blogs-hero/blogs-hero';
+import { SingleBlogHeader } from './component/single-blog-header/single-blog-header';
 
 interface BlogPost {
   title: string;
@@ -14,7 +18,7 @@ interface BlogPost {
 @Component({
   selector: 'app-singl-blog',
   standalone: true,
-  imports: [CommonModule, RouterLink],
+  imports: [CommonModule, RouterLink, BlogContant, ContactHeader, BlogsHero, SingleBlogHeader],
   templateUrl: './singl-blog.html',
   styleUrl: './singl-blog.css',
 })
@@ -28,7 +32,7 @@ export class SinglBlog {
       date: 'Aug 18, 2026',
       readTime: '5 min read',
       slug: 'essential-rules-of-tajweed',
-      image: '/imgs/books.png'
+      image: '/imgs/books.png',
     },
     {
       title: 'Why Female Quran Tutors Are Ideal for Young Children',
@@ -36,7 +40,7 @@ export class SinglBlog {
       date: 'Aug 12, 2026',
       readTime: '4 min read',
       slug: 'female-quran-tutors-kids',
-      image: '/imgs/studies-bg.png'
+      image: '/imgs/studies-bg.png',
     },
     {
       title: '5 Daily Habits to Strengthen Quran Memorization (Hifz)',
@@ -44,8 +48,8 @@ export class SinglBlog {
       date: 'Jul 29, 2026',
       readTime: '7 min read',
       slug: '5-daily-habits-quran-hifz',
-      image: '/imgs/aboutUs.png'
-    }
+      image: '/imgs/aboutUs.png',
+    },
   ];
 
   categories = [
@@ -54,10 +58,18 @@ export class SinglBlog {
     { name: 'Quran Memorization (Hifz)', count: 15 },
     { name: 'Arabic Language Basics', count: 6 },
     { name: 'Islamic Studies for Kids', count: 10 },
-    { name: 'Parenting & Education', count: 5 }
+    { name: 'Parenting & Education', count: 5 },
   ];
 
-  tags = ['Hifz', 'Tajweed', 'QuranForKids', 'AlAzhar', 'OnlineClasses', 'Arabic', 'IslamicStudies'];
+  tags = [
+    'Hifz',
+    'Tajweed',
+    'QuranForKids',
+    'AlAzhar',
+    'OnlineClasses',
+    'Arabic',
+    'IslamicStudies',
+  ];
 
   copyLink(): void {
     if (typeof window !== 'undefined') {
